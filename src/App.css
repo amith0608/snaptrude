@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.map-container{
+  position: relative;
+  background-color: red;
+
+}
+
+.map-content {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10px;
+}
+
+.cube {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #56569d, #514b9c, #2a2275);
+}
+
+.canvas-container {
+  height: 200px;
+}
+
+.canvas-container:focus {
+  outline: none;
+}
+
+.cuboid {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 5%;
+  left: 40px;
+}
+
+.capture-button {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #514b9c;
+  color: white;
+  font-size: large;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px 0px;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+.capture-button:hover {
+  background-color: rgb(50, 50, 180);
+}
+
+.captured-images {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.captured-images img {
+  width: 180px;
+  height: auto;
+}
+
+.image-actions {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
+  bottom: 15px;
+}
+
+.image-actions button {
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image-actions button:hover {
+  background-color: #009cf9;
+}
+
+
+@media (max-width: 468px) {
+  .canvas-container {
+    height: 150px;
+  }
+  
+  .canvas-container:focus {
+    outline: none;
+  }
+  
+  .cuboid {
+    position: absolute;
+    bottom: 2%;
+    left: 20px;
+  }
+.captured-images{
+  justify-content: space-between;
+}
+  .captured-images img {
+    width: 160px;
+  }
+  
+  .image-actions {
+    width: 160px;
+  }
+}
+
+
+
+
